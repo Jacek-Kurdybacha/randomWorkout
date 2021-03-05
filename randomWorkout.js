@@ -16,10 +16,13 @@ const randomWorkout = () => {
            workoutTime -= (excerciseTime + rest);
            excerciseTime = 420 - workoutTime;
            workoutTime += excerciseTime;
-       };
+           console.log(`${excercies[Math.floor(Math.random()*excercies.length)]}: ${excerciseTime} sec`)
+       } else{
        console.log(`${excercies[Math.floor(Math.random()*excercies.length)]}: ${excerciseTime} sec\nRest: ${rest} sec\n`)
+        };
     }; 
   
 };
 
+//Call Function
 randomWorkout();
